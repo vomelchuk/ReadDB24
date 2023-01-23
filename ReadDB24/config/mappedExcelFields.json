@@ -1,0 +1,398 @@
+{
+  "main": [
+    {
+      "excelColumn": "A",
+      "excelColumnName": "код (штатне звання)",
+      "dbField": "field1"
+    },
+    {
+      "excelColumn": "B",
+      "excelColumnName": "код (внутр. підрозділ)",
+      "dbField": "field2"
+    },
+    {
+      "excelColumn": "C",
+      "excelColumnName": "код (мобілізований/контрактник)",
+      "dbField": "field3"
+    },
+    {
+      "excelColumn": "D",
+      "excelColumnName": "код (фактичне звання)",
+      "dbField": "field4"
+    },
+    {
+      "excelColumn": "E",
+      "excelColumnName": "№ з/п",
+      "dbField": "orderNumber"
+    },
+    {
+      "excelColumn": "F",
+      "excelColumnName": "Посада за штатом",
+      "dbField": "militaryPosition"
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    },
+    {
+      "excelColumn": "H",
+      "excelColumnName": "ВОС",
+      "dbField": "militaryProfession"
+    },
+    {
+      "excelColumn": "I",
+      "excelColumnName": "Військове звання за штатом",
+      "dbField": "militaryRank"
+    },
+    {
+      "excelColumn": "J",
+      "excelColumnName": "Військове звання фактичне",
+      "dbField": "realMilitaryRank"
+    },
+    {
+      "excelColumn": "K",
+      "excelColumnName": "ПІБ",
+      "dbField": "person"
+    },
+    {
+      "excelColumn": "L",
+      "excelColumnName": "Час і рік призову (рік народження)",
+      "dbField": "yearOfBirthEnlistment"
+    },
+    {
+      "excelColumn": "M",
+      "excelColumnName": "Категорія",
+      "dbField": "category"
+    },
+    {
+      "excelColumn": "N",
+      "excelColumnName": "Підрозділ",
+      "dbField": "department"
+    },
+    {
+      "excelColumn": "O",
+      "excelColumnName": "Примітка",
+      "dbField": "note"
+    },
+    {
+      "excelColumn": "P",
+      "excelColumnName": "РВК, ТВО, допущення",
+      "dbField": "rvkAndOther"
+    },
+    {
+      "excelColumn": "Q",
+      "excelColumnName": "Дата призову",
+      "dbField": "dateOfEnlistment"
+    },
+    {
+      "excelColumn": "R",
+      "excelColumnName": "Причина",
+      "dbField": "reason"
+    },
+    {
+      "excelColumn": "S",
+      "excelColumnName": "",
+      "dbField": "emptyField1"
+    },
+    {
+      "excelColumn": "T",
+      "excelColumnName": "№ наказу",
+      "dbField": "decreeNumber"
+    },
+    {
+      "excelColumn": "U",
+      "excelColumnName": "Дата убуття",
+      "dbField": "dateOfOut"
+    },
+    {
+      "excelColumn": "V",
+      "excelColumnName": "Де знаходиться",
+      "dbField": "whereIs"
+    },
+    {
+      "excelColumn": "W",
+      "excelColumnName": "Дата прибуття",
+      "dbField": "dateOfIn"
+    },
+    {
+      "excelColumn": "X",
+      "excelColumnName": "Шпиталі при АТО",
+      "dbField": "hospitalAto"
+    },
+    {
+      "excelColumn": "Y",
+      "excelColumnName": "№ наказу (АТО)",
+      "dbField": "decreeAto"
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    }
+  ],
+  "attached": [
+    {
+      "excelColumn": "A",
+      "excelColumnName": "код (штатне звання)",
+      "dbField": "field1"
+    },
+    {
+      "excelColumn": "B",
+      "excelColumnName": "код (внутр. підрозділ)",
+      "dbField": "field2"
+    },
+    {
+      "excelColumn": "C",
+      "excelColumnName": "код (мобілізований/контрактник)",
+      "dbField": "field3"
+    },
+    {
+      "excelColumn": "D",
+      "excelColumnName": "код (фактичне звання)",
+      "dbField": "field4"
+    },
+    {
+      "excelColumn": "E",
+      "excelColumnName": "№ з/п",
+      "dbField": "orderNumber"
+    },
+    {
+      "excelColumn": "F",
+      "excelColumnName": "Посада за штатом",
+      "dbField": "militaryPosition"
+    },
+    {
+      "excelColumn": "G",
+      "excelColumnName": "Військове звання за штатом",
+      "dbField": "militaryRank"
+    },
+    {
+      "excelColumn": "H",
+      "excelColumnName": "Військове звання фактичне",
+      "dbField": "realMilitaryRank"
+    },
+    {
+      "excelColumn": "I",
+      "excelColumnName": "ПІБ",
+      "dbField": "person"
+    },
+    {
+      "excelColumn": "J",
+      "excelColumnName": "Час і рік призову (рік народження)",
+      "dbField": "yearOfBirthEnlistment"
+    },
+    {
+      "excelColumn": "K",
+      "excelColumnName": "Категорія",
+      "dbField": "category"
+    },
+    {
+      "excelColumn": "L",
+      "excelColumnName": "Підрозділ",
+      "dbField": "department"
+    },
+    {
+      "excelColumn": "M",
+      "excelColumnName": "Примітка",
+      "dbField": "note"
+    },
+    {
+      "excelColumn": "N",
+      "excelColumnName": "РВК, ТВО, допущення",
+      "dbField": "rvkAndOther"
+    },
+    {
+      "excelColumn": "O",
+      "excelColumnName": "Дата зарахування до списків частини",
+      "dbField": "dateOfEnlistment"
+    },
+    {
+      "excelColumn": "P",
+      "excelColumnName": "Причина",
+      "dbField": "reason"
+    },
+    {
+      "excelColumn": "Q",
+      "excelColumnName": "",
+      "dbField": "emptyField1"
+    },
+    {
+      "excelColumn": "R",
+      "excelColumnName": "№ наказу",
+      "dbField": "decreeNumber"
+    },
+    {
+      "excelColumn": "S",
+      "excelColumnName": "Дата убуття",
+      "dbField": "dateOfOut"
+    },
+    {
+      "excelColumn": "T",
+      "excelColumnName": "Де знаходиться",
+      "dbField": "whereIs"
+    },
+    {
+      "excelColumn": "U",
+      "excelColumnName": "Дата прибуття",
+      "dbField": "dateOfIn"
+    },
+    {
+      "excelColumn": "V",
+      "excelColumnName": "Шпиталі при АТО",
+      "dbField": "hospitalAto"
+    },
+    {
+      "excelColumn": "W",
+      "excelColumnName": "№ наказу (АТО)",
+      "dbField": "decreeAto"
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    }
+  ],
+  "reserved": [
+    {
+      "excelColumn": "A",
+      "excelColumnName": "код (штатне звання)",
+      "dbField": "field1"
+    },
+    {
+      "excelColumn": "B",
+      "excelColumnName": "код (внутр. підрозділ)",
+      "dbField": "field2"
+    },
+    {
+      "excelColumn": "C",
+      "excelColumnName": "код (мобілізований/контрактник)",
+      "dbField": "field3"
+    },
+    {
+      "excelColumn": "D",
+      "excelColumnName": "код (фактичне звання)",
+      "dbField": "field4"
+    },
+    {
+      "excelColumn": "E",
+      "excelColumnName": "№ з/п",
+      "dbField": "orderNumber"
+    },
+    {
+      "excelColumn": "F",
+      "excelColumnName": "Посада за штатом",
+      "dbField": "militaryPosition"
+    },
+    {
+      "excelColumn": "G",
+      "excelColumnName": "ВОС",
+      "dbField": "militaryProfession"
+    },
+    {
+      "excelColumn": "H",
+      "excelColumnName": "Військове звання за штатом",
+      "dbField": "militaryRank"
+    },
+    {
+      "excelColumn": "I",
+      "excelColumnName": "Військове звання фактичне",
+      "dbField": "realMilitaryRank"
+    },
+    {
+      "excelColumn": "J",
+      "excelColumnName": "ПІБ",
+      "dbField": "person"
+    },
+    {
+      "excelColumn": "K",
+      "excelColumnName": "Час і рік призову (рік народження)",
+      "dbField": "yearOfBirthEnlistment"
+    },
+    {
+      "excelColumn": "L",
+      "excelColumnName": "Категорія",
+      "dbField": "category"
+    },
+    {
+      "excelColumn": "M",
+      "excelColumnName": "Підрозділ",
+      "dbField": "department"
+    },
+    {
+      "excelColumn": "N",
+      "excelColumnName": "Примітка",
+      "dbField": "note"
+    },
+    {
+      "excelColumn": "O",
+      "excelColumnName": "РВК, ТВО, допущення",
+      "dbField": "rvkAndOther"
+    },
+    {
+      "excelColumn": "P",
+      "excelColumnName": "Дата призову",
+      "dbField": "dateOfEnlistment"
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    },
+    {
+      "excelColumn": "",
+      "excelColumnName": "",
+      "dbField": null
+    },
+    {
+      "excelColumn": "S",
+      "excelColumnName": "Причина",
+      "dbField": "reason"
+    },
+    {
+      "excelColumn": "T",
+      "excelColumnName": "",
+      "dbField": "emptyField1"
+    },
+    {
+      "excelColumn": "U",
+      "excelColumnName": "№ наказу",
+      "dbField": "decreeNumber"
+    },
+    {
+      "excelColumn": "V",
+      "excelColumnName": "Дата убуття",
+      "dbField": "dateOfOut"
+    },
+    {
+      "excelColumn": "W",
+      "excelColumnName": "Де знаходиться",
+      "dbField": "whereIs"
+    },
+    {
+      "excelColumn": "X",
+      "excelColumnName": "Дата прибуття",
+      "dbField": "dateOfIn"
+    },
+    {
+      "excelColumn": "Y",
+      "excelColumnName": "Шпиталі при АТО",
+      "dbField": "hospitalAto"
+    },
+    {
+      "excelColumn": "Z",
+      "excelColumnName": "№ наказу (АТО)",
+      "dbField": "decreeAto"
+    }
+  ]
+}

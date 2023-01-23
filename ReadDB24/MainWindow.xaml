@@ -1,0 +1,91 @@
+﻿<Window x:Class="ReadDB24.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadDB24"
+        mc:Ignorable="d"
+        Title="Штатка 24" MinWidth="800" MinHeight="600" FontSize="16" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen" >
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="10" />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="П.І.Б.:" FontWeight="Bold"/>
+        <TextBox x:Name="fullNameText" Grid.Row="1" Grid.Column="2" MinWidth="300" Text="" Margin="5,0,0,10" />
+        <Button x:Name="importButton" Content="Імпорт" Grid.Row="1" Grid.Column="6" Margin="0,0,10,0" Width="80" HorizontalAlignment="Right" Click="importButton_Click"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Text="Початкова дата:" FontWeight="Bold" Margin="0,0,0,10" />
+        <DatePicker x:Name="startDateText" Grid.Row="2" Grid.Column="2" Width="200" Margin="5,0,0,10" HorizontalAlignment="Left" Grid.RowSpan="2" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="Кінцева дата:" FontWeight="Bold" Margin="0,0,0,10" Grid.RowSpan="2"/>
+        <DatePicker x:Name="endDateText" Grid.Row="3" Grid.Column="2" Width="200" Margin="5,0,0,10" HorizontalAlignment="Left"/>
+        <Button x:Name="runButton" Content="Виконати" Grid.Row="3" Grid.Column="3" Width="100" HorizontalAlignment="Left" Margin="10,0,0,10"  Click="runButton_Click"/>
+        <TextBlock x:Name="statusTextLabel" Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="3" Margin="5,0,0,0" FontSize="12" FontFamily="Century" VerticalAlignment="Center" />
+        <Grid Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="6" Margin="0,0,10,0">
+            <DataGrid x:Name="tableData" FontSize="12" AutoGenerateColumns="False" VerticalScrollBarVisibility="Auto" IsReadOnly="false" HorizontalScrollBarVisibility="auto">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Binding="{Binding RecordDate}" Header="Дата"/>
+                    <DataGridTextColumn Binding="{Binding SheetName}" Header="Аркуш"/>
+                    <DataGridTextColumn Binding="{Binding Field1}" Header="" >
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="LightGray"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Field2}" Header="">
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="LightGray"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Field3}" Header="">
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="LightGray"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding Field4}" Header="">
+                        <DataGridTextColumn.CellStyle>
+                            <Style TargetType="DataGridCell">
+                                <Setter Property="Background" Value="LightGray"/>
+                            </Style>
+                        </DataGridTextColumn.CellStyle>
+                    </DataGridTextColumn>
+                    <DataGridTextColumn Binding="{Binding OrderNumber}" Header="№ з/п"/>
+                    <DataGridTextColumn Binding="{Binding MilitaryPosition}" Header="Посада за штатом"/>
+                    <DataGridTextColumn Binding="{Binding MilitaryRank}" Header="Військове звання за штатом"/>
+                    <DataGridTextColumn Binding="{Binding RealMilitaryRank}" Header="Військове звання фактичне"/>
+                    <DataGridTextColumn Binding="{Binding FullName}" Header="П.І.Б."/>
+                    <DataGridTextColumn Binding="{Binding DateOfBirth}" Header="Дата народження"/>
+                    <DataGridTextColumn Binding="{Binding Department}" Header="Підрозділ"/>
+                    <DataGridTextColumn Binding="{Binding Note}" Header="Примітка"/>
+                    <DataGridTextColumn Binding="{Binding RvkAndOther}" Header="РВК, ТВО, допущення"/>
+                    <DataGridTextColumn Binding="{Binding EnlistmentDate}" Header="Дата призову"/>
+                    <DataGridTextColumn Binding="{Binding Reason}" Header="Причина"/>
+                    <DataGridTextColumn Binding="{Binding DecreeNumber}" Header="№ наказу"/>
+                    <DataGridTextColumn Binding="{Binding DateOfOut}" Header="Дата убуття"/>
+                    <DataGridTextColumn Binding="{Binding WhereIs}" Header="Де знаходиться"/>
+                    <DataGridTextColumn Binding="{Binding DateOfIn}" Header="Дата прибуття"/>
+                    <DataGridTextColumn Binding="{Binding HospitalAto}" Header="Шпиталі при АТО"/>
+                    <DataGridTextColumn Binding="{Binding DecreeAto}" Header="№ наказу АТО"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </Grid>
+</Window>

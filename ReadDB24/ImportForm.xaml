@@ -1,0 +1,59 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ReadDB24"
+        x:Class="ReadDB24.ImportForm"
+        mc:Ignorable="d"
+        Title="Імпорт даних з Excel файлу" Height="800" Width="1200" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition Height="10" />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="10" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="1" Grid.Column="1" Text="Шлях до файлу Excel:" FontWeight="Bold" HorizontalAlignment="Right" FontSize="16"/>
+        <TextBox x:Name="excelFilePath" Grid.Row="1" Grid.Column="2" Width="500" Text="" Margin="5,0,0,10" HorizontalAlignment="Left"/>
+        <Button x:Name="showFolderButton" Content="Вибрати файл..." Grid.Row="1" Grid.Column="3" Margin="10,0,0,0" Click="ShowFolderButton_Click" Width ="120" HorizontalAlignment="Left"/>
+        <TextBlock Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" Text="Відповідність колонок на аркушах в Excel файлі" FontWeight="Bold" FontSize="16" HorizontalAlignment="Center" Margin="0,20,0,10"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="1" Text="аркуш 'таблиця'" HorizontalAlignment="Center" Foreground="Blue" Margin="0,0,0,7" FontWeight="Bold"/>
+        <TextBlock Grid.Row="3" Grid.Column="2" Text="аркуш 'прикоманд'" HorizontalAlignment="Center" Foreground="Blue" Margin="0,0,0,7" FontWeight="Bold"/>
+        <TextBlock Grid.Row="3" Grid.Column="3" Text="аркуш 'запаснарота'" HorizontalAlignment="Center" Foreground="Blue" Margin="0,0,0,7" FontWeight="Bold"/>
+
+        <DataGrid x:Name="sheetMain" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Left" FontSize="12" Margin="0,0,10,0" AutoGenerateColumns="False" CanUserAddRows="false" HorizontalScrollBarVisibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Колонка" Binding="{Binding ExcelColumn}"/>
+                <DataGridTextColumn Header="Назва" IsReadOnly="true" Binding="{Binding ExcelColumnName}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <DataGrid x:Name="sheetAttached" Grid.Row="4" Grid.Column="2" HorizontalAlignment="Left"  FontSize="12" Margin="0,0,10,0" AutoGenerateColumns="False" CanUserAddRows="false" HorizontalScrollBarVisibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Колонка" Binding="{Binding ExcelColumn}"/>
+                <DataGridTextColumn Header="Назва" IsReadOnly="true" Binding="{Binding ExcelColumnName}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid x:Name="sheetReserved" Grid.Row="4" Grid.Column="3" HorizontalAlignment="Left"  FontSize="12" AutoGenerateColumns="False" CanUserAddRows="false" HorizontalScrollBarVisibility="Hidden">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Колонка" Binding="{Binding ExcelColumn}"/>
+                <DataGridTextColumn Header="Назва" IsReadOnly="true" Binding="{Binding ExcelColumnName}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Grid.Row="5" Grid.Column="1" Content="Імпортувати" Margin="10,10,0,0" Click="Button_Click" Width="80" HorizontalAlignment="Left"/>
+        <TextBlock x:Name="importLog" Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="3" Margin="10,10,0,0"/>
+    </Grid>
+</Window>
